@@ -18,6 +18,15 @@ class App extends Component {
             {this.props.props.parsedMetaTags.map((tag, index) => (
                 <meta key={index} {...tag} />
             ))}
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMQTQSW3NS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GMQTQSW3NS');
+</script>
           </Head>
         </div>
     )
